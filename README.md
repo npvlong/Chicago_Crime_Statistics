@@ -2,6 +2,8 @@
 
 <img src="Images/Chicago.jpg" width="500" />
 
+#### Dataset: https://www.kaggle.com/currie32/crimes-in-chicago
+
 ### Packages
 
 ``` r
@@ -50,7 +52,7 @@ by_type %>%
     theme(plot.title = element_text(hjust = 0.5))
 ```
 
-<img src="Images/IMG-unnamed-chunk-4-1.png" width="800" />
+<img src="Images/IMG-unnamed-chunk-4-1.png" width="1000" />
 
 ``` r
 # Get the top 9 most common crimes 
@@ -203,6 +205,3 @@ common_location %>%
 ```
 
 <img src="Images/IMG-unnamed-chunk-9-2.png" width="800" />
-
-
-#### Dataset: https://www.kaggle.com/currie32/crimes-in-chicago
