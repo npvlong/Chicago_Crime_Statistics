@@ -49,7 +49,7 @@ by_type %>%
     theme(plot.title = element_text(hjust = 0.5))
 ```
 
-<img src="Images/IMG-unnamed-chunk-4-1.png" width="800" />
+<img src="Images/IMG-unnamed-chunk-4-1.png" width="1000" />
 
 ``` r
 # Get the top 9 most common crimes 
@@ -67,7 +67,7 @@ ggplot(data=common_crimes, aes(x=Month)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-<img src="Images/IMG-unnamed-chunk-6-1.png" width="800" />
+<img src="Images/IMG-unnamed-chunk-6-1.png" width="1000" />
 
 ``` r
 ggplot(data=common_crimes, aes(x=Weekday)) +
@@ -78,7 +78,7 @@ ggplot(data=common_crimes, aes(x=Weekday)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-<img src="Images/IMG-unnamed-chunk-6-2.png" width="800" />
+<img src="Images/IMG-unnamed-chunk-6-2.png" width="1000" />
 
 ``` r
 ggplot(data=common_crimes, aes(x=Hour)) +
@@ -89,7 +89,7 @@ ggplot(data=common_crimes, aes(x=Hour)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-<img src="Images/IMG-unnamed-chunk-6-3.png" width="800" />
+<img src="Images/IMG-unnamed-chunk-6-3.png" width="1000" />
 
 ``` r
 #Common location
