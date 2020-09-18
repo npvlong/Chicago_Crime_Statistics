@@ -6,50 +6,9 @@ Chicago Crimes Statistics
 ``` r
 library(ggplot2)
 library(tidyverse)
-```
-
-    ## -- Attaching packages --------------------------------------------------------------------------- tidyverse 1.3.0 --
-
-    ## v tibble  3.0.1     v dplyr   1.0.2
-    ## v tidyr   1.1.2     v stringr 1.4.0
-    ## v readr   1.3.1     v forcats 0.5.0
-    ## v purrr   0.3.4
-
-    ## -- Conflicts ------------------------------------------------------------------------------ tidyverse_conflicts() --
-    ## x dplyr::filter() masks stats::filter()
-    ## x dplyr::lag()    masks stats::lag()
-
-``` r
 library(ggmap)
-```
-
-    ## Google's Terms of Service: https://cloud.google.com/maps-platform/terms/.
-
-    ## Please cite ggmap if you use it! See citation("ggmap") for details.
-
-``` r
 library(lubridate)
-```
-
-    ## 
-    ## Attaching package: 'lubridate'
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     date, intersect, setdiff, union
-
-``` r
 library(maps)
-```
-
-    ## 
-    ## Attaching package: 'maps'
-
-    ## The following object is masked from 'package:purrr':
-    ## 
-    ##     map
-
-``` r
 library(forcats)
 ```
 
