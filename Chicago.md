@@ -16,9 +16,7 @@ library(forcats)
 
 ``` r
 df <- read.csv("C:/Users/Long Nguyen/Box/My folder/Project/Crime/Chicago/Chicago_Crimes_2012_to_2017.csv")
-```
 
-``` r
 # Omit missing values
 df <- na.omit(df)
 names(df)<- tolower(names(df))
@@ -37,11 +35,6 @@ df$Hour <- factor(hour(as.POSIXlt(df$date, format="%m/%d/%Y %H:%M:%S")))
 ``` r
 # Sorting Crimes 
 by_type <- df %>% group_by(primary_type) %>% summarise(Total = n()) %>% arrange(desc(Total))
-```
-
-    ## `summarise()` ungrouping output (override with `.groups` argument)
-
-``` r
 by_type$primary_type <- factor(by_type$primary_type,levels = by_type$primary_type[order(by_type$Total)])
 
 # Plot
@@ -108,9 +101,7 @@ by_location <- common_crimes %>% group_by(location_description) %>% summarise(To
 ``` r
 head(by_location)
 ```
-
-    ## # A tibble: 6 x 2
-    ##   location_description            Total
+         location_description            Total
     ##   <fct>                           <int>
     ## 1 STREET                         188127
     ## 2 RESIDENCE                      122169
