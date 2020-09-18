@@ -94,11 +94,6 @@ ggplot(data=common_crimes, aes(x=Hour)) +
 ``` r
 #Common location
 by_location <- common_crimes %>% group_by(location_description) %>% summarise(Total = n()) %>% arrange(desc(Total))                                   
-```
-
-    ## `summarise()` ungrouping output (override with `.groups` argument)
-
-``` r
 head(by_location)
 ```
          location_description            Total
@@ -119,11 +114,7 @@ common_location <- filter(common_crimes, location_description %in% c('STREET','R
 
 street <- filter(common_location,location_description %in% c('STREET'))
 streetm <- street %>% group_by(primary_type) %>% summarise(Total = n()) %>% arrange(desc(Total))
-```
 
-    ## `summarise()` ungrouping output (override with `.groups` argument)
-
-``` r
 ggplot(streetm, aes(x="", y=Total, fill=primary_type))+
   geom_bar(stat = "identity", width = 1)+
   coord_polar("y", start=0, direction = -1) +
@@ -138,11 +129,7 @@ ggplot(streetm, aes(x="", y=Total, fill=primary_type))+
 ``` r
 residence <- filter(common_location,location_description %in% c('RESIDENCE'))
 residencem <- residence %>% group_by(primary_type) %>% summarise(Total = n()) %>% arrange(desc(Total))
-```
 
-    ## `summarise()` ungrouping output (override with `.groups` argument)
-
-``` r
 ggplot(residencem, aes(x="", y=Total, fill=primary_type))+
   geom_bar(stat = "identity", width = 1)+
   coord_polar("y", start=0, direction = -1) +
@@ -157,11 +144,7 @@ ggplot(residencem, aes(x="", y=Total, fill=primary_type))+
 ``` r
 apartment <- filter(common_location,location_description %in% c('APARTMENT'))
 apartmentm <- apartment %>% group_by(primary_type) %>% summarise(Total = n()) %>% arrange(desc(Total))
-```
 
-    ## `summarise()` ungrouping output (override with `.groups` argument)
-
-``` r
 ggplot(apartmentm, aes(x="", y=Total, fill=primary_type))+
   geom_bar(stat = "identity", width = 1)+
   coord_polar("y", start=0, direction = -1) +
@@ -176,11 +159,7 @@ ggplot(apartmentm, aes(x="", y=Total, fill=primary_type))+
 ``` r
 sidewalk <- filter(common_location,location_description %in% c('SIDEWALK'))
 sidewalkm <- sidewalk %>% group_by(primary_type) %>% summarise(Total = n()) %>% arrange(desc(Total))
-```
 
-    ## `summarise()` ungrouping output (override with `.groups` argument)
-
-``` r
 ggplot(sidewalkm, aes(x="", y=Total, fill=primary_type))+
   geom_bar(stat = "identity", width = 1)+
   coord_polar("y", start=0, direction = -1) +
