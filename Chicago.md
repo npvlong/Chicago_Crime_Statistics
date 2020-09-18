@@ -49,7 +49,7 @@ by_type %>%
     theme(plot.title = element_text(hjust = 0.5))
 ```
 
-<img src="Images/IMG-unnamed-chunk-4-1.png" width="672" />
+<img src="Images/IMG-unnamed-chunk-4-1.png" width="800" />
 
 ``` r
 # Get the top 9 most common crimes 
@@ -67,7 +67,7 @@ ggplot(data=common_crimes, aes(x=Month)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-<img src="Images/IMG-unnamed-chunk-6-1.png" width="672" />
+<img src="Images/IMG-unnamed-chunk-6-1.png" width="800" />
 
 ``` r
 ggplot(data=common_crimes, aes(x=Weekday)) +
@@ -78,7 +78,7 @@ ggplot(data=common_crimes, aes(x=Weekday)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-<img src="Images/IMG-unnamed-chunk-6-2.png" width="672" />
+<img src="Images/IMG-unnamed-chunk-6-2.png" width="800" />
 
 ``` r
 ggplot(data=common_crimes, aes(x=Hour)) +
@@ -89,7 +89,7 @@ ggplot(data=common_crimes, aes(x=Hour)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 
-<img src="Images/IMG-unnamed-chunk-6-3.png" width="672" />
+<img src="Images/IMG-unnamed-chunk-6-3.png" width="800" />
 
 ``` r
 #Common location
@@ -124,7 +124,7 @@ ggplot(streetm, aes(x="", y=Total, fill=primary_type))+
   theme_void()
 ```
 
-<img src="Images/IMG-unnamed-chunk-8-1.png" width="672" />
+<img src="Images/IMG-unnamed-chunk-8-1.png" width="800" />
 
 ``` r
 residence <- filter(common_location,location_description %in% c('RESIDENCE'))
@@ -139,7 +139,7 @@ ggplot(residencem, aes(x="", y=Total, fill=primary_type))+
   theme_void()
 ```
 
-<img src="Images/IMG-unnamed-chunk-8-2.png" width="672" />
+<img src="Images/IMG-unnamed-chunk-8-2.png" width="800" />
 
 ``` r
 apartment <- filter(common_location,location_description %in% c('APARTMENT'))
@@ -154,7 +154,7 @@ ggplot(apartmentm, aes(x="", y=Total, fill=primary_type))+
   theme_void()
 ```
 
-<img src="Images/IMG-unnamed-chunk-8-3.png" width="672" />
+<img src="Images/IMG-unnamed-chunk-8-3.png" width="800" />
 
 ``` r
 sidewalk <- filter(common_location,location_description %in% c('SIDEWALK'))
@@ -169,7 +169,7 @@ ggplot(sidewalkm, aes(x="", y=Total, fill=primary_type))+
   theme_void()
 ```
 
-<img src="Images/IMG-unnamed-chunk-8-4.png" width="672" />
+<img src="Images/IMG-unnamed-chunk-8-4.png" width="800" />
 
 ``` r
 # Mapping Crime by Location
@@ -185,7 +185,7 @@ common_location %>%
   theme(axis.title = element_blank(),axis.text = element_blank())
 ```
 
-<img src="Images/IMG-unnamed-chunk-9-1.png" width="672" />
+<img src="Images/IMG-unnamed-chunk-9-1.png" width="800" />
 
 ``` r
 # Mapping Crime by Crime Types 
@@ -201,4 +201,4 @@ common_location %>%
   theme(axis.title = element_blank(),axis.text = element_blank())
 ```
 
-<img src="Images/IMG-unnamed-chunk-9-2.png" width="672" />
+<img src="Images/IMG-unnamed-chunk-9-2.png" width="800" />
