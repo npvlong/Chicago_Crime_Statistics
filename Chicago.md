@@ -49,7 +49,7 @@ by_type %>%
     theme(plot.title = element_text(hjust = 0.5))
 ```
 
-<img src="Images/IMG-unnamed-chunk-4-1.png" width="1000" />
+<img src="Images/IMG-unnamed-chunk-4-1.png" width="800" />
 
 ``` r
 # Get the top 9 most common crimes 
