@@ -1,6 +1,6 @@
 # Chicago Crime Statistics
 
-<img src="Images/Chicago.jpg" width="1000" />
+<img src="Images/Chicago.jpg" width="500" />
 
 ### Packages
 
