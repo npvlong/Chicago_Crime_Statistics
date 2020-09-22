@@ -1,6 +1,6 @@
 # Chicago Crime Statistics
 
-<img src="Images/Chicago.jpg" width="500" />
+<img src="Images/Chicago.jpg" width="510" />
 
 #### Dataset: https://www.kaggle.com/currie32/crimes-in-chicago
 
