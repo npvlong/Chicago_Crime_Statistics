@@ -188,6 +188,7 @@ common_location %>%
   theme(axis.title = element_blank(),axis.text = element_blank())
 ```
 <img src="Images/chicago.png" width="800" />
+Cre: Wikipedia
 
 <img src="Images/IMG-unnamed-chunk-9-1.png" width="800" />
 
