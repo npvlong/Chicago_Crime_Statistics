@@ -175,7 +175,7 @@ ggplot(sidewalkm, aes(x="", y=Total, fill=primary_type))+
 <img src="Images/IMG-unnamed-chunk-8-4.png" width="800" />
 
 ### Mapping Crime Rate based on Map of Chicago
-<img src="Images/chicago.png" width="800" />
+<img src="Images/chicago.png" width="600" />
 Cre: Wikipedia
 
 ``` r
