@@ -175,7 +175,7 @@ ggplot(sidewalkm, aes(x="", y=Total, fill=primary_type))+
 <img src="Images/IMG-unnamed-chunk-8-4.png" width="800" />
 
 ``` r
-# Mapping Crime by Location
+# Mapping Crime by Location based on Map of Chicago
 common_location %>% 
   group_by(location_description, longitude, latitude) %>% 
   count() %>% 
@@ -187,6 +187,7 @@ common_location %>%
   theme_minimal()+
   theme(axis.title = element_blank(),axis.text = element_blank())
 ```
+<img src="Images/chicago.png" width="800" />
 
 <img src="Images/IMG-unnamed-chunk-9-1.png" width="800" />
 
